@@ -1,0 +1,7 @@
+sceneSetups:
+- path: Assets/leap-motion-arms.unity
+  isLoaded: 1
+  isActive: 0
+- path: Assets/LeapMotion/Core/Examples/Rigged Hands/Rigged Hands (VR - Infrared Viewer).unity
+  isLoaded: 1
+  isActive: 1
