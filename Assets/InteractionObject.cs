@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Diagnostics;
 
 public class InteractionObject : MonoBehaviour {
 
@@ -47,7 +48,7 @@ public class InteractionObject : MonoBehaviour {
                         //ExecuteAction("IExplorer.exe", "www.example.com");
                         break;
                     case "Other_selector":
-                        ExecuteAction("start", "explorer");
+                        ExecuteAction("explorer", "");
                         break;
                     default:
                         break;
@@ -62,7 +63,7 @@ public class InteractionObject : MonoBehaviour {
                         //ExecuteAction("IExplorer.exe", "www.example.com");
                         break;
                     case "Other_selector":
-                        ExecuteAction("start", "paint");
+                        ExecuteAction("mspaint", "");
                         break;
                     default:
                         break;
@@ -78,7 +79,7 @@ public class InteractionObject : MonoBehaviour {
                         //ExecuteAction("IExplorer.exe", "www.example.com");
                         break;
                     case "Other_selector":
-                        ExecuteAction("start", "spotify");
+                        ExecuteAction("spotify", "");
                         break;
                     default:
                         break;
@@ -104,15 +105,15 @@ public class InteractionObject : MonoBehaviour {
     }
 
     public void ExecuteAction (string action, string args) {
-        //System.Diagnostics.ProcessStartInfo process = new System.Diagnostics.ProcessStartInfo();
-        //process.FileName = action;
-        //process.Arguments = args;
+        Process process = new Process();
+        process.StartInfo.FileName = action;
+        process.StartInfo.Arguments = args;
+        process.Start();
     }
 
     public void setText(GameObject objectToSet, string text) {
         TextMesh textToChange = (TextMesh)objectToSet.GetComponentInChildren(typeof(TextMesh));
         textToChange.text = text;
-        Debug.Log(textToChange.text);
     }
 
     public void SetMusicActions () {

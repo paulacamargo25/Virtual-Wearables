@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Virtual-Wearables", "Virtual-Wearables.csproj", "{A1E13ED4-E2B8-2223-3053-A13AE62B2943}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Virtual-Wearables.Editor", "Virtual-Wearables.Editor.csproj", "{F68A2676-938C-201A-05F3-EB03A8A7B266}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A1E13ED4-E2B8-2223-3053-A13AE62B2943}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1E13ED4-E2B8-2223-3053-A13AE62B2943}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1E13ED4-E2B8-2223-3053-A13AE62B2943}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1E13ED4-E2B8-2223-3053-A13AE62B2943}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F68A2676-938C-201A-05F3-EB03A8A7B266}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F68A2676-938C-201A-05F3-EB03A8A7B266}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F68A2676-938C-201A-05F3-EB03A8A7B266}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F68A2676-938C-201A-05F3-EB03A8A7B266}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
