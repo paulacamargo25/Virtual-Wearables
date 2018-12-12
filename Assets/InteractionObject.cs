@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.Diagnostics;
+using UnityEngine.SceneManagement;
 
 public class InteractionObject : MonoBehaviour {
 
@@ -133,11 +134,7 @@ public class InteractionObject : MonoBehaviour {
     }
 
     public void SetOtherActions () {
-        setText(innerObjects[0], "File Manager");
-        setText(innerObjects[1], "Paint");
-        setText(innerObjects[2], "Spotify");
-        setText(innerObjects[3], "Chrome");
-        setBaseColor(Color.blue);
+        SceneManager.LoadScene("desktop");
     }
 
     public void setBaseColor (Color color) {
